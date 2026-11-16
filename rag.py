@@ -5,9 +5,9 @@ from config import client, CHAT_MODEL, EMBED_MODEL, DB_PATH, COLLECTION, TOP_K, 
 
 SYSTEM_PROMPT = """You are a helpful assistant that answers ONLY from the provided context.
 Rules:
-- Answer in the same language as the question (English question -> English answer, French question -> French answer).
+- Answer in the same language as the question (English question -> English answer, Arabic question -> Arabic answer).
 - If the answer is not in the context, do not guess. Say only:
-  "I don't know based on these documents." (if the question is in French: "Je ne sais pas d'après ces documents.")
+  "I don't know based on these documents." (if the question is in Arabic: "لا أعرف بناءً على هذه الوثائق.")
 - Be short and clear: one or two sentences.
 - Cite the source exactly as written in the context header, e.g. [sahara_labs_handbook.md § Leave]. Never invent a page."""
 

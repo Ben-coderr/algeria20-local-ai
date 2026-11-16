@@ -75,6 +75,6 @@ Exercises: write a `read_file(path)` tool that can only read inside `data/` (blo
 5. Set `API_KEY=secret` in a `.env` file, restart, and check that `/ask` now returns 401 without the header.
 
 ## Bonus
-Streaming UI · chat memory · PDF upload button · compare `EMBED_MODEL=nomic-embed-text` vs `bge-m3` on French/Arabic questions with `eval.py` · run a model with `transformers` or publish on a Hugging Face Space.
+Streaming UI · chat memory · PDF upload button · compare `EMBED_MODEL=nomic-embed-text` vs `bge-m3` on Arabic questions with `eval.py` · run a model with `transformers` or publish on a Hugging Face Space.
 
 Share your result on LinkedIn with #Algeria20.

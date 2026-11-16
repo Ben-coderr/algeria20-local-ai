@@ -6,7 +6,7 @@ $ python eval.py --quick
 PASS  How many days of paid annual leave do full-time employees get?
 PASS  How much is the monthly intern allowance?
 PASS  Which day of the week is the remote work day?
-PASS  Combien gagne un stagiaire par mois ?
+PASS  كم يتقاضى المتدرب شهريا؟
 PASS  Who is the CEO of Sahara Labs?
 
 Score: 5/5 = 100%  [chat=llama3.2:3b embed=bge-m3 k=4 chunk=800 | 17s]

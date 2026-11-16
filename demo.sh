@@ -69,7 +69,7 @@ case "${1:-}" in
     run "python eval.py --quick"
     ;;
 
-  eval-bad)  # Same test, English-only embeddings + 1 chunk: the French question breaks
+  eval-bad)  # Same test, English-only embeddings + 1 chunk: the Arabic question breaks
     title "EVAL — change ONE thing: English-only embeddings"
     run "EMBED_MODEL=nomic-embed-text DB_PATH=chroma_nomic TOP_K=1 python eval.py --quick"
     ;;
@@ -114,7 +114,7 @@ ${Y}Stage helper${N}   ./demo.sh <step>
   ${G}agent${N}        Demo 3  · agent: search → calculator → save note
   ${G}agent2${N}       Demo 3b · second agent task (optional)
   ${G}eval${N}         Eval    · 5 test questions, good config   (AFTER the agent)
-  ${G}eval-bad${N}     Eval    · English-only embeddings → French fails
+  ${G}eval-bad${N}     Eval    · English-only embeddings → Arabic fails
   ${G}web${N}          Demo 4  · start web app (own terminal tab)
   ${G}api${N}          Demo 4  · call the API with curl
   ${G}docker${N}       Demo 4  · show compose file + running containers

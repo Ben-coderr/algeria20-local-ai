@@ -7,8 +7,8 @@
   {"q": "How many days in advance must leave requests be sent?", "expect": "10"},
   {"q": "What is the annual learning budget?", "expect": "60000"},
   {"q": "How many leave days do interns get per month of internship?", "expect": "2"},
-  {"q": "Combien gagne un stagiaire par mois ?", "expect": "40000", "quick": true},
+  {"q": "كم يتقاضى المتدرب شهريا؟", "expect": "40000", "quick": true},
   {"q": "Who is the CEO of Sahara Labs?", "expect": "UNKNOWN", "quick": true},
   {"q": "What is the company's annual revenue?", "expect": "UNKNOWN"},
-  {"q": "Quel est le salaire d'un ingénieur senior ?", "expect": "UNKNOWN"}
+  {"q": "ما هو راتب مهندس أول؟", "expect": "UNKNOWN"}
 ]

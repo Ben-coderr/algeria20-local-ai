@@ -64,7 +64,7 @@ Model names change fast: check https://ollama.com/library.
 | Agent, `qwen2.5:7b` | **10/10 runs correct**, ~25 s per task |
 | Eval, bge-m3, top_k=4 | 12/12 in 82 s |
 | Eval, bge-m3, top_k=1 | 12/12 in 55 s (less context → faster, same score) |
-| Eval, nomic-embed-text (English-only), top_k=1 | 11/12 — the French question fails |
+| Eval, nomic-embed-text (English-only), top_k=1 | 11/12 — the Arabic question fails |
 
 ## Deploy
 Linux server (everything in Docker):

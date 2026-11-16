@@ -6,8 +6,8 @@ $ EMBED_MODEL=nomic-embed-text DB_PATH=chroma_nomic TOP_K=1 python eval.py --qui
 PASS  How many days of paid annual leave do full-time employees get?
 PASS  How much is the monthly intern allowance?
 PASS  Which day of the week is the remote work day?
-FAIL  Combien gagne un stagiaire par mois ?
-     expected: '40000' | got: "Je ne sais pas d'après ces documents."
+FAIL  كم يتقاضى المتدرب شهريا؟
+     expected: '40000' | got: 'لا أعرف بناءً على هذه الوثائق.'
 PASS  Who is the CEO of Sahara Labs?
 
 Score: 4/5 = 80%  [chat=llama3.2:3b embed=nomic-embed-text k=1 chunk=800 | 17s]

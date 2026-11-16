@@ -15,7 +15,7 @@ import time
 from config import CHAT_MODEL, EMBED_MODEL, TOP_K, CHUNK_SIZE
 from rag import answer
 
-UNKNOWN_MARKERS = ("don't know", "do not know", "ne sais pas", "je ne sais")
+UNKNOWN_MARKERS = ("don't know", "do not know", "لا أعرف", "لا أعلم")
 
 
 def norm(s: str) -> str:

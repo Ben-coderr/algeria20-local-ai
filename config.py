@@ -5,7 +5,7 @@ from ollama import Client
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 CHAT_MODEL = os.getenv("CHAT_MODEL", "llama3.2:3b")
 AGENT_MODEL = os.getenv("AGENT_MODEL", "qwen2.5:7b")
-# bge-m3 is multilingual (French / Arabic / English questions on the same docs).
+# bge-m3 is multilingual (Arabic / English questions on the same docs).
 # nomic-embed-text is smaller but English-first. Compare both with eval.py.
 EMBED_MODEL = os.getenv("EMBED_MODEL", "bge-m3")
 
