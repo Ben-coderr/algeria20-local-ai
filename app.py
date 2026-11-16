@@ -97,11 +97,11 @@ PAGE = """<!doctype html>
 <header><h1>Local AI <span>Assistant</span></h1></header>
 <div class="badges"><span class="badge">100% open-source</span><span class="badge">runs on this laptop</span>
 <span class="badge">no API key · no card</span><span class="badge o" id="models">…</span></div>
-<form id="f"><input id="q" placeholder="Ask about the documents… / Posez votre question…" autocomplete="off" autofocus>
+<form id="f"><input id="q" placeholder="Ask about the documents… / اسأل عن الوثائق…" autocomplete="off" autofocus>
 <button id="go">Ask</button></form>
 <div class="chips">
  <span class="chip">How many leave days do full-time employees get?</span>
- <span class="chip">Combien gagne un stagiaire par mois ?</span>
+ <span class="chip" dir="rtl">كم يوم عطلة يحصل عليها الموظف؟</span>
  <span class="chip">Who is the CEO of Sahara Labs?</span>
 </div>
 <div id="card"><div id="out"></div><div id="src"></div><div id="meta"></div></div>
