@@ -1,0 +1,10 @@
+
+━━━ SECURITY — API key ON (app on port 8001) ━━━
+
+$ curl -s -o /dev/null -w 'without key → HTTP %{http_code}\n' localhost:8001/ask -H 'Content-Type: application/json' -d '{"question":"hi"}'
+
+without key → HTTP 401
+
+$ curl -s -o /dev/null -w 'with key    → HTTP %{http_code}\n' localhost:8001/ask -H 'Content-Type: application/json' -H 'X-API-Key: algeria20' -d '{"question":"What is the remote work day?"}'
+
+with key    → HTTP 200

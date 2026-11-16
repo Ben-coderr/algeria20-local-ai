@@ -1,0 +1,12 @@
+
+━━━ DEMO 1 — a local LLM ━━━
+
+$ python 01_hello.py "Give me 3 AI project ideas for Algerian students, one line each."
+
+Here are three AI project ideas for Algerian students:
+
+1. **Language Translation Chatbot**: Develop a chatbot that translates Algerian Arabic into French and vice versa using machine learning algorithms.
+2. **Smart Home Automation System**: Design an AI-powered home automation system that uses computer vision and machine learning to control lighting, temperature, and security systems remotely.
+3. **Disease Diagnosis Assistant**: Create an AI-powered assistant that uses natural language processing and machine learning to analyze medical symptoms and provide diagnoses for common Algerian diseases.
+
+[llama3.2:3b | first token 14.2s | total 22.1s | 106 tokens · 13 tokens/s | cost 0 DA | 100% local]

@@ -1,0 +1,14 @@
+
+━━━ DEMO 1b — ask the same question 3 times ━━━
+
+$ python 01_hello.py "Explain RAG in one sentence" | head -1
+
+RAG (Respect, Acceptance, and Gratitude) is a social-emotional learning framework that encourages individuals to practice self-awareness, empathy, and kindness towards themselves and others, promoting a positive and supportive community.
+
+$ python 01_hello.py "Explain RAG in one sentence" | head -1
+
+RAG (Resilience, Adaptability, and Growth) is a framework that helps individuals develop essential life skills to cope with challenges, adapt to change, and achieve personal growth.
+
+$ python 01_hello.py "Explain RAG in one sentence" | head -1
+
+RAG (Reactive Attachment Disorder) is a psychological condition in which a child's attachment to a primary caregiver is severely impaired, often resulting from neglect, abuse, or inconsistent caregiving.

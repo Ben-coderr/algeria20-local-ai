@@ -1,0 +1,19 @@
+(recorded Mon 16 Nov 2026 on the stage laptop)
+
+$ docker compose -f docker-compose.stage.yml up -d --build
+ Container algeria20-local-ai-app-1 Created
+ Container algeria20-local-ai-app-1 Started
+
+$ docker compose -f docker-compose.stage.yml exec app python rag_ingest.py
+indexed sahara_labs_handbook.md
+Done: 8 chunks stored in 'chroma_db/' (embed=bge-m3, chunk=800, overlap=150)
+
+$ curl localhost:8000/ask -d '{"question":"What is the remote work day?"}'
+{"answer":"Every Thursday is a remote work day for all employees.",
+ "sources":["sahara_labs_handbook.md § Working hours", ...], "seconds":10.7}
+
+$ docker compose -f docker-compose.stage.yml ps
+NAME                       IMAGE                    STATUS          PORTS
+algeria20-local-ai-app-1   algeria20-local-ai-app   Up 23 seconds   0.0.0.0:8000->8000/tcp
+
+image size: 828 MB (python:3.12-slim + chromadb + fastapi)

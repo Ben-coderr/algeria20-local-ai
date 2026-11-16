@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+chroma_db/
+notes.md
+.env
+eval_results.log
+backup/
+*.mov
+*.mp4
+chroma_nomic/

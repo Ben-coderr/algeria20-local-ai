@@ -1,0 +1,23 @@
+# Stage / laptop option: the app runs in Docker, Ollama runs natively on the laptop.
+# Why: on Mac and Windows, Ollama inside Docker cannot use the GPU / Metal and is slower,
+# and you don't download the models a second time (saves ~4 GB of disk).
+#
+#   docker compose -f docker-compose.stage.yml up -d --build
+#   docker compose -f docker-compose.stage.yml exec app python rag_ingest.py
+#   open http://localhost:8000
+services:
+  app:
+    build: .
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - API_KEY=${API_KEY:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # needed on Linux, harmless elsewhere
+    volumes:
+      - chroma_stage:/app/chroma_db
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+volumes:
+  chroma_stage:

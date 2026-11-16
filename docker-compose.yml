@@ -1,0 +1,27 @@
+services:
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    # SECURITY: port 11434 is NOT published. Only the app container can reach Ollama.
+    # For local debugging only, uncomment:
+    # ports:
+    #   - "127.0.0.1:11434:11434"
+    restart: unless-stopped
+
+  app:
+    build: .
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - API_KEY=${API_KEY:-}      # set API_KEY in a .env file for any public deployment
+    volumes:
+      - chroma_data:/app/chroma_db
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  chroma_data:

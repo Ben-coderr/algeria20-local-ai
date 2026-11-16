@@ -1,0 +1,13 @@
+
+$ curl -s localhost:8000/ask -H 'Content-Type: application/json' -d '{"question":"What is the remote work day?"}' | python -m json.tool --no-ensure-ascii
+
+{
+    "answer": "Every Thursday is a remote work day for all employees.",
+    "sources": [
+        "sahara_labs_handbook.md § Working hours",
+        "sahara_labs_handbook.md § Leave",
+        "sahara_labs_handbook.md § intro",
+        "sahara_labs_handbook.md § Equipment"
+    ],
+    "seconds": 3.2
+}

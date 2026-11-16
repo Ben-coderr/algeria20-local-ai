@@ -1,0 +1,19 @@
+
+━━━ DEMO 3 — an agent with tools ━━━
+
+$ python agent.py
+
+Task: I'm a full-time employee. I took 7 days of leave in March and 5 in August. How many leave days do I have left? Save the answer as a note.
+
+[step 1] the model chose a tool (41.0s)
+   tool  search_documents({'query': 'full-time employee annual leave days'}) → [sahara_labs_handbook.md § Leave] ## Leave Full-time employees receive 24 days of paid ann…
+[step 2] the model chose a tool (10.9s)
+   tool  calculator({'expression': '24 - (7 + 5)'}) → 12…
+[step 3] the model chose a tool (6.8s)
+   tool  save_note({'text': 'You have 12 leave days left.'}) → Note saved to notes.md…
+
+Answer: You have 12 leave days left. This has been saved as a note.
+
+$ cat notes.md
+
+- 2026-11-16 15:43 — You have 12 leave days left.

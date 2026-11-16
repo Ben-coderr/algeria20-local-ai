@@ -1,0 +1,28 @@
+
+━━━ DEMO 2 — chat with the documents ━━━
+
+$ python rag_ask.py
+
+Ask questions about your documents (type 'exit' to quit)
+
+You: 
+Retrieved: sahara_labs_handbook.md § Leave | sahara_labs_handbook.md § Working hours | sahara_labs_handbook.md § Equipment | sahara_labs_handbook.md § Internships
+Answer: Full-time employees receive 24 days of paid annual leave per year.
+   [3.1s · 100% local]
+
+You: 
+Retrieved: sahara_labs_handbook.md § Internships | sahara_labs_handbook.md § Leave | sahara_labs_handbook.md § Learning | sahara_labs_handbook.md § Equipment
+Answer: Un stagiaire reçoit un allowance de 40 000 DZD par mois. [sahara_labs_handbook.md § Internships]
+   [3.1s · 100% local]
+
+You: 
+Retrieved: sahara_labs_handbook.md § Leave | sahara_labs_handbook.md § Working hours | sahara_labs_handbook.md § Equipment | sahara_labs_handbook.md § Internships
+Answer: حصل الموظف على 24 يومًا عطلة سنويًا.
+   [2.2s · 100% local]
+
+You: 
+Retrieved: sahara_labs_handbook.md § About us | sahara_labs_handbook.md § intro | sahara_labs_handbook.md § Contact | sahara_labs_handbook.md § Learning
+Answer: I don't know based on these documents.
+   [1.3s · 100% local]
+
+You: 
