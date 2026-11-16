@@ -32,7 +32,7 @@ Everything runs on your laptop: no API key, no credit card, works offline.
 | `workshop/EXERCISES.md` | Self-paced labs (~2 h) |
 | `docs/Local AI Field Guide.html` | Beginner guide to every concept (EN / AR) |
 | `backup/` | Real outputs of every demo, recorded on the talk laptop |
-| `deck/` | Offline copy of the talk slides (served at `localhost:8000/deck/`) |
+| `deck/` | The talk slides as a PDF (`deck/slides.pdf`), also served at `localhost:8000/deck/` |
 
 ## Quick start
 ```bash
