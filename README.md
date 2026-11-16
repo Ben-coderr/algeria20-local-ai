@@ -10,7 +10,7 @@ Everything runs on your laptop: no API key, no credit card, works offline.
 | **Student / junior dev** | Follow the *Quick start* below, then do the labs in `workshop/EXERCISES.md`. |
 | **Developer** | Read *What we measured* and *Production notes*, write your own eval questions, compare two models. |
 
-**Homework from the talk:** build a RAG assistant for *your* course or club, post it on LinkedIn with **#Algeria20**.
+**Homework from the talk:** build a RAG assistant for *your* course or club, post it on LinkedIn with **#Algeria20** and tag me: [linkedin.com/in/danour](https://www.linkedin.com/in/danour/).
 
 ## Use your own documents
 1. Put your `.pdf`, `.md` or `.txt` files in `data/` (remove the sample handbook if you want).
